@@ -1,0 +1,62 @@
+.page {
+  margin: auto;
+  display: block;
+  width: 1301px;
+  & > h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+  }
+  & > p {
+    display: block;
+    text-align: center;
+    width: 653px;
+    margin: auto; //to center on page
+    color: #afadb5;
+    margin-bottom: 30px;
+  }
+}
+
+.filterAndCards {
+  width: 1240px;
+  margin: auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filterContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.filter {
+  position: absolute;
+}
+
+.total {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.totalPhrase {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.totalNumber {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-accent);
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 10px;
+}

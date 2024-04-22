@@ -1,0 +1,34 @@
+.button {
+  height: 52px;
+  background-color: var(--button-primary-bg);
+  border: none;
+  color: var(--button-primary-text);
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button:focus {
+  background-color: var(--button-primary-bg-active);
+}
+
+.button:hover {
+  background-color: var(--button-primary-bg-hover);
+}
+
+.withloader:focus {
+  background-color: var(--button-primary-bg);
+}
+
+.withloader:hover {
+  background-color: var(--button-primary-bg);
+}
+
+.button:disabled,
+.withloader:disabled {
+  background-color: var(--button-primary-bg-disabled);
+}
+
+.fakeDisabled:disabled {
+  background-color: var(--button-primary-bg);
+}
