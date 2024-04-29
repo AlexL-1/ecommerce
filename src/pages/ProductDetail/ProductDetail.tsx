@@ -21,7 +21,7 @@ const ProductDetail = () => {
     id = 1; //at least we will show some product.
   }
 
-  const [productData, SetProductData] = useState<Product>();
+  const [productData, SetProductData] = useState<Product | null>(null);
   const [relatedProducts, SetRelatedProducts] = useState<Product[]>([]);
 
   useEffect(() => {
