@@ -4,7 +4,7 @@ import { makeGetRequest } from "../utils/axios_get";
 
 //https://api.escuelajs.co/api/v1/products/4
 //надо приклетить id к url
-const getProduct = async (id: number ) => {
+const getProduct = async (id: number ): Promise<Product | null> => {
   const data = await makeGetRequest<Product>({url:API_ENDPOINTS.PRODUCTS + "/" + id.toString()});
   return data;
 };
