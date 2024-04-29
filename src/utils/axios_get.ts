@@ -15,7 +15,7 @@ type RequestParams = { //эти параметры нужны для отпра�
 
 
 // T неизвестный пока тип. Мы будем давать тип ожидаемого ответа при обращении  к функции
-export const makeGetRequest = async<T> ({url,params }:RequestParams) => {
+export const makeGetRequest = async<T> ({url,params }:RequestParams): Promise<T> => {
     try {
       const response = await axios.get(url, {
         params: params
