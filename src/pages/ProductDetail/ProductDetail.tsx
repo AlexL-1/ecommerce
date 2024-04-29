@@ -58,7 +58,7 @@ const ProductDetail = () => {
         Back
       </a>
 
-      <div className={styles.cardInfo}>
+      {productData && (<div className={styles.cardInfo}>
         <img src={productData?.images[0]} alt={productData?.title} />
         <div className={styles.ProductDetail}>
           <h1>{productData?.title}</h1>
