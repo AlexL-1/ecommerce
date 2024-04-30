@@ -21,7 +21,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   keySelected,
   onChange,
 }: DropdownProps) => {
-  let [isExpanded, Toggle] = useState(false);
+  let [isExpanded, setIsExpanded] = useState<boolean>(false);
   let [index, setIndex] = useState<string>(keySelected);
 
   const newRef = useRef<HTMLDivElement>(null);
