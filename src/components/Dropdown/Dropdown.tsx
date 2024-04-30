@@ -30,7 +30,7 @@ const Dropdown: React.FC<DropdownProps> = ({
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
-  });
+  }, []);
   const handleOutsideClick = (e: any) => {
     if (newRef.current && !newRef.current.contains(e.target)) {
       Toggle(false);
