@@ -22,7 +22,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   onChange,
 }: DropdownProps) => {
   let [isExpanded, Toggle] = useState(false);
-  let [index, SetIndex] = useState(keySelected);
+  let [index, setIndex] = useState<string>(keySelected);
 
   const newRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
