@@ -9,7 +9,7 @@ export type LoaderProps = {
   className?: string;
 };
 
-const Loader: React.FC<LoaderProps> = ({ size, className }: LoaderProps) => {
+const Loader: React.FC<LoaderProps> = ({ size = "s", className }: LoaderProps) => {
   if (!size) size = "s";
 
   let classNameString: string = styles.loader + " " + size;
