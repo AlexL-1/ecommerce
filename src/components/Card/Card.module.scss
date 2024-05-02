@@ -1,0 +1,20 @@
+.card {
+  display: block;
+  background-color: var(--card-bg);
+  width: 349px;
+  margin-bottom: 30px;
+  transition: transform 0.2s; /* Animation */
+}
+.card:hover {
+  box-shadow: var(--shadow);
+  transform: scale(1.02);
+}
+
+.card img {
+  background-color: var(--card-image-bg);
+}
+
+.card_white {
+  padding: 10px;
+  padding-top: 20px;
+}
